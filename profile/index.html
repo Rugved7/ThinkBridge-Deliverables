@@ -20,26 +20,32 @@
       <div class="nav-container">
         <ul class="nav-list">
           <button class="nav-btn">
-            <a href="index.html"><li>Home</li></a>
+            <a href="#hero"><li>Home</li></a>
+          </button>
+
+          <button class="nav-btn">
+            <a href="#about-section"><li>About</li></a>
+          </button>
+
+          <button class="nav-btn">
+            <a href="#education-section"><li>Education</li></a>
+          </button>
+
+          <button class="nav-btn">
+            <a href="#skills-section"><li>Skills</li></a>
           </button>
           <button class="nav-btn">
-            <a href="index.html"><li>About</li></a>
+            <a href="#projects-section"><li>Projects</li></a>
           </button>
           <button class="nav-btn">
-            <a href="skills.html"><li>Skills</li></a>
-          </button>
-          <button class="nav-btn">
-            <a href="contact.html"><li>Contact</li></a>
-          </button>
-          <button class="nav-btn">
-            <a href="projects.html"><li>Projects</li></a>
+            <a href="#contact-section"><li>Contact</li></a>
           </button>
         </ul>
       </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="hero" class="hero">
       <div class="hero-content">
         <h1 id="intro">Hello, <span class="name">Rugved</span> this side.</h1>
         <p class="hero-text">
@@ -55,7 +61,7 @@
     <div class="divider"><hr /></div>
 
     <!-- About Section -->
-    <section class="about">
+    <section id="about-section" class="about">
       <div class="about-header">
         <h1>About Me</h1>
         <img
@@ -87,75 +93,93 @@
 
     <div class="divider"><hr /></div>
 
-    <!-- Experience Section -->
-    <section class="experience">
-      <div class="experience-container">
+    <!-- Education Section -->
+    <section id="education-section" class="education">
+      <div class="education-container">
         <h1>Education</h1>
-        <ul class="experience-list">
+        <ul class="education-list">
           <li>D Y Patil International University</li>
         </ul>
+        <strong>Bachelor of Technology</strong>
+        <p>Computer Science and Engineering</p>
         <span class="duration">Oct 2021 - June 2025</span>
 
-        <p></p>
+        <div class="education-details">
+          <h3>Achievements & Experiences</h3>
+          <p>
+            Participated in
+            <strong>Smart India Hackathon (SIH)</strong> representing my
+            university, where I worked on building an innovative software
+            solution addressing real-world challenges.
+          </p>
+          <p>
+            Won the <strong>College Hackathon</strong> by developing a project
+            focused on enhancing user experience and system efficiency,
+            showcasing teamwork and technical skills.
+          </p>
+        </div>
       </div>
     </section>
 
     <div class="divider"><hr /></div>
 
     <!-- Skills Section -->
-    <article class="skill">
-      <h1>Skills</h1>
-      <div class="skill-table-container">
-        <table class="skill-table">
-          <thead>
-            <tr>
-              <th>Skills</th>
-              <th>Uses</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>HTML</td>
-              <td>Used HTML in designing various static web pages</td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-              <td>Used CSS to style and make the web pages look appealing</td>
-            </tr>
-            <tr>
-              <td>JavaScript</td>
-              <td>Used JavaScript on both client and server side</td>
-            </tr>
-            <tr>
-              <td>React.js</td>
-              <td>
-                A modern frontend JavaScript library for creating Single Page
-                Applications
-              </td>
-            </tr>
-            <tr>
-              <td>Node.js</td>
-              <td>
-                Used Node.js for building backend and handling server-side logic
-              </td>
-            </tr>
-            <tr>
-              <td>MongoDB</td>
-              <td>A NoSQL based database using BSON format</td>
-            </tr>
-            <tr>
-              <td>JWT Security</td>
-              <td>Used for authentication and authorization both</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </article>
+    <section id="skills-section">
+      <article class="skill">
+        <h1>Skills</h1>
+        <div class="skill-table-container">
+          <table class="skill-table">
+            <thead>
+              <tr>
+                <th>Skills</th>
+                <th>Uses</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td>Used HTML in designing various static web pages</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Used CSS to style and make the web pages look appealing</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>Used JavaScript on both client and server side</td>
+              </tr>
+              <tr>
+                <td>React.js</td>
+                <td>
+                  A modern frontend JavaScript library for creating Single Page
+                  Applications
+                </td>
+              </tr>
+              <tr>
+                <td>Node.js</td>
+                <td>
+                  Used Node.js for building backend and handling server-side
+                  logic
+                </td>
+              </tr>
+              <tr>
+                <td>MongoDB</td>
+                <td>A NoSQL based database using BSON format</td>
+              </tr>
+              <tr>
+                <td>JWT Security</td>
+                <td>Used for authentication and authorization both</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
 
     <div class="divider"><hr /></div>
 
     <!-- Contact Form -->
-    <section class="contact">
+    <section id="contact-section" class="contact">
       <div class="contact-container">
         <h1>Connect with Me</h1>
         <form id="userForm" class="contact-form">
@@ -181,7 +205,7 @@
     <div class="divider"><hr /></div>
 
     <!-- Projects Section -->
-    <section class="projects">
+    <section id="projects-section" class="projects">
       <h1>Projects</h1>
 
       <div id="project-1" class="project-card">
