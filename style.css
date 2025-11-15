@@ -13,6 +13,16 @@ body {
   padding: 20px;
 }
 
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -48,6 +58,7 @@ html {
   font-size: 2rem;
   font-family: "JetBrains Mono", monospace;
   margin-bottom: 8px;
+  min-height: 2.5rem;
 }
 
 .profile-header .tagline {
@@ -344,4 +355,72 @@ html {
   padding: 20px 50px;
   text-align: center;
   font-size: 0.9rem;
+}
+
+
+#toggle-theme {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #e7580b;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+#toggle-theme:hover {
+  background-color: #f37029;
+}
+
+/* DARK THEME FIXES */
+body.dark-theme .profile-container {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+body.dark-theme .education-item,
+body.dark-theme .project-item,
+body.dark-theme .contact-form {
+  background-color: #2a2a2a;
+  border-color: #e7580b;
+}
+
+body.dark-theme .section {
+  border-color: #444;
+}
+
+body.dark-theme .skills-table td,
+body.dark-theme .skills-table th {
+  border-color: #555;
+}
+
+body.dark-theme .skills-table tr:nth-child(even) {
+  background-color: #333;
+}
+
+body.dark-theme .skills-table tr:hover {
+  background-color: #444;
+}
+
+body.dark-theme .project-desc,
+body.dark-theme .tech-stack,
+body.dark-theme .education-item h3,
+body.dark-theme .degree {
+  color: #ddd;
+}
+
+body.dark-theme .form-group label {
+  color: #ddd;
+}
+
+body.dark-theme .form-group input,
+body.dark-theme .form-group textarea {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
 }
